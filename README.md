@@ -12,6 +12,26 @@ Alternative splicing (AS) is a highly conserved mechanism that allows to expand 
 ## Code Explanation
   The full pipeline of the analysis is in the file **Alternative_splicing_project_def_code_Github.sh**, this file will redirect you to other scripts also present in this repository. An outline summary of the contents of the scripts is:
 
+AS_mechanism_by_conditions.R
+AS_mechanism_by_conditions_CHI_test.R
+AS_mechanism_by_conditions_comparing_peak_location.R
+check_overlaping_zones.R
+Comparison_diffbind_peaks_with_splicing_sites_100bp_without_overlapping_genes_Github.R
+correlation_DEMG_without_overlap_definitive_120423.R
+Ctrl_vd_Infec_MG_analysis_210722_Github.R
+Ctrl_vd_Infec_SG_analysis_210722_Github.R
+DEMG_correlation_by_levels_without_overlap.r
+DESeq2_analysis_MG_vs_SG_070422.R
+Diffbind_correlation.R
+files_correlations_DEG_DU_Github.sh
+Genes_paper_malar_development_parasites.R
+isoform_switch_Ctrl_vs_Infec.R
+Isoform_switch_MG_vs_SG.R
+merge_enhancers_with_DEMG_DUI_def_310123_Github.R
+Motif_analysis_diffbind_splicing_sites_DUI_DEF_130423_Github.R
+script_volcanos_percent_DUI_vs_DEG_def_210722.R
+
+
 
 
 
