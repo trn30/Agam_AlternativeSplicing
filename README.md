@@ -14,7 +14,7 @@ Alternative splicing (AS) is a highly conserved mechanism that allows to expand 
 
  - AS_mechanism_by_conditions.R
    
- ggggggg
+  See how many type of events apear in the DEMG and DUI isoforms of the _Inf MG vs. Inf SG_
  + AS_mechanism_by_conditions_CHI_test.R
 
 
