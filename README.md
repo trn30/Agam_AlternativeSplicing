@@ -52,7 +52,7 @@ Alternative splicing (AS) is a highly conserved mechanism that allows to expand 
 
    Enrichment counts at promoters and in the body of isoforms, these counts are necessary for the study of the correlation between expression and accessibility
    
- - **Correlation_DEMG_without_overlap_definitive.R**
+ - **Correlation_DEMG_without_overlap.R**
 
    To see if there is a correlation between the expression and accessibility of the DEMG isoforms in the comparison _Inf MG vs. Inf SG_ 
 
@@ -60,7 +60,7 @@ Alternative splicing (AS) is a highly conserved mechanism that allows to expand 
 
    We searched for diffbind peaks that matched splicing sites of our DUI isoforms
 
- - **Motif_analysis_diffbind_splicing_sites_DUI_DEF.R**
+ - **Motif_analysis_diffbind_splicing_sites_DUI.R**
 
    With the diffbind peaks coincident with splicing sites in the DUI we will do a motif analysis. We do the same with these peaks that are also located in splicing events of the exon skipping type
 
