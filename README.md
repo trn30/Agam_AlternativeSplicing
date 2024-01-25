@@ -12,15 +12,15 @@ Alternative splicing (AS) is a highly conserved mechanism that allows to expand 
 ## Code Explanation
  The full pipeline of the analysis is in the file **Alternative_splicing_project_def_code_Github.sh**, this file will redirect you to other scripts also present in this repository. An outline summary of the contents of the scripts is:
 
- - **DESeq2_analysis_MG_vs_SG_070422.R**
+ - **DESeq2_analysis_MG_vs_SG.R**
 
    Obtain Differential expressed isoforms of multisoform genes (DEMG) in the _Inf MG vs. Inf SG_ comparison
 
- - **Ctrl_vd_Infec_MG_analysis_210722_Github.R**
+ - **Ctrl_vd_Infec_MG_analysis.R**
 
    Obtain Differential expressed isoforms of multisoform genes (DEMG) in the _Ctrl vs. Inf MG_ comparison
 
- - **Ctrl_vd_Infec_SG_analysis_210722_Github.R**
+ - **Ctrl_vd_Infec_SG_analysis.R**
 
    Obtain Differential expressed isoforms of multisoform genes (DEMG) in the _Ctrl MG vs. Inf SG_ comparison
 
@@ -32,7 +32,7 @@ Alternative splicing (AS) is a highly conserved mechanism that allows to expand 
 
    Quantification of the usage with IsoformSwitchAnalyzeR, obtaing isoforms differentially used (DUI) in the _Ctrl vs. Inf MG_ and _Ctrl vs. Inf SG_ comparisons
    
- - **Script_volcanos_percent_DUI_vs_DEG_def_210722.R**
+ - **Script_volcanos_percent_DUI_vs_DEG.R**
 
    Obtain  the volcano plot of DEMG vs DUI in the _Inf MG vs. Inf SG_ comparison
    
@@ -48,19 +48,19 @@ Alternative splicing (AS) is a highly conserved mechanism that allows to expand 
 
    How to check for overlapping areas by removing overlapping genes with promoters of our isoforms and calculate the correlation of the DEMG cluster without these overlapping genes.
 
- - **Files_correlations_DEG_DU_Github.sh**
+ - **Files_correlations_DEG_DUI.sh**
 
    Enrichment counts at promoters and in the body of isoforms, these counts are necessary for the study of the correlation between expression and accessibility
    
- - **Correlation_DEMG_without_overlap_definitive_120423.R**
+ - **Correlation_DEMG_without_overlap_definitive.R**
 
    To see if there is a correlation between the expression and accessibility of the DEMG isoforms in the comparison _Inf MG vs. Inf SG_ 
 
- - **Comparison_diffbind_peaks_with_splicing_sites_100bp_without_overlapping_genes_Github.R**
+ - **Comparison_diffbind_peaks_with_splicing_sites_100bp_without_overlapping_genes.R**
 
    We searched for diffbind peaks that matched splicing sites of our DUI isoforms
 
- - **Motif_analysis_diffbind_splicing_sites_DUI_DEF_130423_Github.R**
+ - **Motif_analysis_diffbind_splicing_sites_DUI_DEF.R**
 
    With the diffbind peaks coincident with splicing sites in the DUI we will do a motif analysis. We do the same with these peaks that are also located in splicing events of the exon skipping type
 
@@ -68,7 +68,7 @@ Alternative splicing (AS) is a highly conserved mechanism that allows to expand 
 
    To study if any type of event is related to specific accessibility of a region, we use the script AS_mechanism_by_conditions_comparing_peak_location.R
 
- - **Merge_enhancers_with_DEMG_DUI_def_310123_Github.R**
+ - **Merge_enhancers_with_DEMG_DUI.R**
 
    How we extrac enhancers known by other authors and by our group taking _Drosophila_ orthologs and we look how many of them are present and active in our groups of DEMG and DUI
 
