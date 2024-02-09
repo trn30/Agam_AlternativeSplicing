@@ -147,10 +147,10 @@ bedtools intersect -c -a Isoforms_AgamP4_release_54.bed -b R10-I1d7_nucfree_mapq
 ### the information to check overlapping zones is in check_overlaping_zones.R
 #### first we eliminate overlapping gene with isoforms Promoters and calculate the correlation of DEMG group whitout overlapping genes
 ### THE COUNTS OF THE ENRICHMENT ARE IN files_correlations_DEG_DUI.sh or above this information
-
+#### inrformation about the correlation is in : correlation_DEMG_without_overlap
 
 #### divide the expression and accessibility by levels to perform the correlation and make Ngsplot
-# correlation_DEMG_without_overlap.R
+# DEMG_correlation_by_levels_without_overlap.R
 
 
  ngs.plot.r -G AgamP4 -R bed -C config_ngsplot_accesible_SG.txt -O expression_genebody_SG
