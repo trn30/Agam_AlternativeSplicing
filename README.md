@@ -10,7 +10,7 @@ Alternative splicing (AS) is a highly conserved mechanism that allows to expand 
 
 
 ## Code Explanation
- The full pipeline of the analysis is in the file **Alternative_splicing_project_def_code_Github.sh**, this file will redirect you to other scripts also present in this repository. An outline summary of the contents of the scripts is:
+ The full pipeline of the analysis is in the file **Alternative_splicing_project_code.sh**, this file will redirect you to other scripts also present in this repository. An outline summary of the contents of the scripts is:
 
  - **Extract_isoforms_from_multisoform_genes.R**
 
