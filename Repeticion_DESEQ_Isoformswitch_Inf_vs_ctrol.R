@@ -60,7 +60,7 @@ dataList_MG <- importRdata(
   isoformNtFasta       = "/Genomes/genomic_data_AgamP4/Anopheles-gambiae-PEST_TRANSCRIPTS_AgamP4.12.fa",
   comparisonsToMake = data.frame(condition_1="Infected",condition_2="Non-Infected"),
   showProgress = FALSE)
-
+dataList_MG <- preFilter(dataList_MG)
 dataList_SG <- importRdata(
   isoformCountMatrix   = salmonquant_SG$counts,
   isoformRepExpression = salmonquant_SG$abundance,
@@ -69,6 +69,7 @@ dataList_SG <- importRdata(
   isoformNtFasta       = "/Genomes/genomic_data_AgamP4/Anopheles-gambiae-PEST_TRANSCRIPTS_AgamP4.12.fa",
   comparisonsToMake = data.frame( condition_1 ="Non-Infected",condition_2="Infected"),
   showProgress = FALSE)
+dataList_SG <- preFilter(dataList_SG)
 
 
 
