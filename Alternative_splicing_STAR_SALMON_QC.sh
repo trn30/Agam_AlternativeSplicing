@@ -29,7 +29,7 @@ STAR --runThreadN 20 --runMode genomeGenerate --genomeDir /P_falciparum_ATAC-seq
 
 ### Mapping all files:
      cd /Alternative_splicing/raw_data/paired ## same as /A_gambiae_P_falciparum_infected_RNA-seq_NARGB_2021/RNA_Agam_0119/out_sortmerna
-        # sortmerna with default databases + custom databases: (esta es la mejor opción basada en los fastqc)
+        # sortmerna with default databases + custom databases: 
         # for f in $(ls | egrep -E '_no_rRNA_def_cust_dbs.fastq$' ); do unmerge-paired-reads.sh "${f}" "${f}_1.fq" "${f}_2.fq"; done &&
 
   for f in $(ls | egrep -E '_1.fastq.dsrc.fastq$' );do STAR --genomeDir /P_falciparum_ATAC-seq_NAR_2018/ATAC_seq/igenomes/Anopheles-gambiae_AgamP4_STAR_idx --sjdbGTFfile /P_falciparum_ATAC-seq_NAR_2018/ATAC_seq/igenomes/VectorBase-54_AgambiaePEST.gff.gtf --readFilesIn "${f}" "$(sed 's/_1.fq.fastq.dsrc.fastq/_2.fq.fastq.dsrc.fastq/g' <<<"${f}")" --outSAMtype BAM Unsorted --outSAMunmapped Within --quantMode TranscriptomeSAM GeneCounts --twopassMode Basic --alignIntronMin 1 --alignIntronMax 249416 --outFileNamePrefix /Alternative_splicing/out_STAR_2024/"${f}_mapped.bam" --runThreadN 20 --outFilterScoreMinOverLread 0.3 --outFilterMatchNminOverLread 0.3; done
