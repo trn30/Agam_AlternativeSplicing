@@ -48,6 +48,7 @@ dataList_MGSG <- importRdata(
   isoformNtFasta       = "/Genomes/genomic_data_AgamP4/Anopheles-gambiae-PEST_TRANSCRIPTS_AgamP4.12.fa",
   comparisonsToMake = data.frame(condition_1="Midguts",condition_2="Salivary_glands"),
   showProgress = FALSE)
+dataList_MGSG <- preFilter(dataList_MGSG) 
 
 # PART 1
 ## this part includes gene and low isoforms expression filtering, statistical analysis to identify isoform switches and annotate these switches with ORF and write the nucleotide and amino acids secuences in fasta files
